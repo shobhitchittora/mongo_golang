@@ -139,7 +139,7 @@ func main() {
 	//Db connection code
 
 	//db, err := mgo.Dial("localhost")
-	db, err := mgo.Dial("mongodb://shobhitchittora:hellobeautiful@ds033484.mongolab.com:33484/shobhitdb")
+	db, err := mgo.Dial("mongodb://<u-name>:<passwd>@ds033484.mongolab.com:33484/<dbName>")
 	if err != nil {
 		log.Fatal("Cannot dial mongo ", err)
 	}
